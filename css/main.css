@@ -1,17 +1,34 @@
-.game-header li {
-  list-style-type: none;
-  height: 35px;
-  width: 70px;
-  background-color: #dfe073;
- margin-left: 100px;
-  padding: 15px;
-  display: inline-block;
-  text-align: center;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-  
+table {
+  margin: auto;
 }
-.sweeper {
-  border-radius: 50%;
+
+.head {
+  font-size: 40px;
+  margin: auto;
+  text-align: center;
+  color: bisque;
+  padding: 40px;
+}
+
+th {
+  height: 40px;
+  color: #dfe073;
+  text-align: center;
+  font-size: 40px;
+  margin: auto;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
+
+button:hover {
+  background-color: rgb(241, 229, 48);
+  cursor: pointer;  
+}
+button.selected {
+  background: rgb(236, 138, 9);
 }
 
 body {
@@ -25,6 +42,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 .field-cell {
   display: flex;
 }
@@ -32,16 +50,16 @@ body {
 .cell {
   width: 40px;
   height: 40px;
-  background: linear-gradient(to top, rgb(143, 160, 81), rgb(143, 160, 81),  rgb(143, 160, 81), rgb(143, 160, 81), rgb(143, 160, 81), rgb(143, 160, 81), rgb(143, 160, 81));
+  background: linear-gradient(to top, rgb(143, 160, 81), rgb(143, 160, 81), rgb(143, 160, 81), rgb(143, 160, 81), rgb(143, 160, 81), rgb(143, 160, 81), rgb(143, 160, 81));
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   cursor: pointer;
-
-
 }
+
 .cell:hover {
-  background: linear-gradient(to top,  #074e25, rgb(143, 202, 146), rgb(183, 235, 149));
+  background: linear-gradient(to top, #074e25, rgb(143, 202, 146), rgb(183, 235, 149));
 }
+
 .cell.selected {
-  background: linear-gradient(to top,  #074e25, rgb(54, 185, 61), yellow);
+  background: linear-gradient(to top, #074e25, rgb(54, 185, 61), yellow);
   opacity: 30%;
 }

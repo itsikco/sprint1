@@ -13,7 +13,6 @@ function setMinesNegsCount(field){
             if (i === rowIdx && j === colIdx) continue
             var currCell = mat[i][j];
             if (currCell === '🔅') count++
-            if (currCell === '🔅') count++
         }
     }    
 }
@@ -36,5 +35,8 @@ function minesAroundCount(){
     console.log('Count:', count);
     return count;
 }
-
+function getMineHTML(MINE) {
+    if(gMine.isOn){
+        return `<span style= "color:blue">${GHOST}</span>`;
+    }
 
