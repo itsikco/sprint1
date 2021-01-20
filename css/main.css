@@ -1,0 +1,47 @@
+.game-header li {
+  list-style-type: none;
+  height: 35px;
+  width: 70px;
+  background-color: #dfe073;
+ margin-left: 100px;
+  padding: 15px;
+  display: inline-block;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  
+}
+.sweeper {
+  border-radius: 50%;
+}
+
+body {
+  background: #111;
+}
+
+.minefield {
+  display: flex;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.field-cell {
+  display: flex;
+}
+
+.cell {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(to top, rgb(143, 160, 81), rgb(143, 160, 81),  rgb(143, 160, 81), rgb(143, 160, 81), rgb(143, 160, 81), rgb(143, 160, 81), rgb(143, 160, 81));
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+
+
+}
+.cell:hover {
+  background: linear-gradient(to top,  #074e25, rgb(143, 202, 146), rgb(183, 235, 149));
+}
+.cell.selected {
+  background: linear-gradient(to top,  #074e25, rgb(54, 185, 61), yellow);
+  opacity: 30%;
+}
